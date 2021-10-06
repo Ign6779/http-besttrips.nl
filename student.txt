@@ -1,0 +1,4 @@
+Student name: Ignacio de Eusebio
+Student number: 679908
+Student class: IT1a
+URL student Github repository: https://github.com/Ign6779/http-besttrips.nl.git
