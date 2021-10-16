@@ -21,7 +21,7 @@
 			<h2>Discover your smile</h2>
 			
 			<nav>
-				<ul>
+				<ul class="navigation">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="bestdestinations.html">Destinations</a></li>
 					<li><a href="tickets.html">Tickets</a></li>
@@ -32,7 +32,40 @@
 			
 		</header>
 		
+		<form action="question" method="post">
+			<fieldset>
+				<legend>Do you have a question? Ask it here!</legend>
+				
+				<p>
+					<label for="name">Name:</label>
+					<input type="text" name="name" id="nameInput">
+				</p>
+				
+				<p>
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="emailInput">
+				</p>
+				
+				<p>
+					<label for="message">Question:</label>
+					<input type="text" name="message" id="questionInput">
+				</p>
+				
+				<p>
+				<button>Submit</button>
+				<button type="reset">Reset form</button>
+				</p>
+				
+			</fieldset>
+		</form>
 		
+		<aside class="ad">
+			<a href="http://tui.nl">
+				<img src="./img/plane_image.jpg" title="plane image" alt="Image of a plane" />
+				<img src="./img/greece_image.jpg" title="greece image" alt="Image of Greece" />
+				<img src="./img/canary_image.jpg" title="canary image" alt="Image of the Canary Islands" />
+			</a>
+		</aside>
 		
 		<footer>
 			<p>&copy; 2021 Ignacio de Eusebio</p>
