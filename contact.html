@@ -11,8 +11,7 @@
 		<meta name="description" content="Best trip destinations from NL" />
 		<meta name="keywords" content="Trip, Netherlands, NL, destination, travel" />
 		<meta name="author" content="Ignacio de Eusebio" />
-		<title>Best trips from NL</title>
-		
+		<title>Best trips from NL</title>		
 	</head>
 	
 	<body>
@@ -20,19 +19,17 @@
 			<h1>TUI</h1>
 			<h2>Discover your smile</h2>
 			
-			<nav>
-				<ul class="navigation">
+			<!--Desktop and tablet navigation-->
+			<nav id="topNavigation">
+				<ul>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="bestdestinations.html">Destinations</a></li>
-					<li><a href="tickets.html">Tickets</a></li>
-				
-				</ul>
-			
-			</nav>
-			
+					<li><a href="tickets.html">Tickets</a></li>				
+				</ul>			
+			</nav>			
 		</header>
 		
-		<form action="question" method="post">
+		<form action="question" method="post" id="questionnaire">
 			<fieldset>
 				<legend>Do you have a question? Ask it here!</legend>
 				
@@ -54,12 +51,11 @@
 				<p>
 				<button>Submit</button>
 				<button type="reset">Reset form</button>
-				</p>
-				
+				</p>				
 			</fieldset>
 		</form>
 		
-		<aside class="ad">
+		<aside id="ad">
 			<a href="http://tui.nl">
 				<img src="./img/plane_image.jpg" title="plane image" alt="Image of a plane" />
 				<img src="./img/greece_image.jpg" title="greece image" alt="Image of Greece" />
@@ -71,6 +67,7 @@
 			<p>&copy; 2021 Ignacio de Eusebio</p>
 		</footer>
 		
+		<p id="cookieStatement">Cookie statement</p>
 	</body>
 	
 </html>
