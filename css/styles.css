@@ -1,118 +1,304 @@
-body
-	{
-		width: 100%;
-		margin: 0;
-		padding: 0;
+* {
+	margin: 0;
+	padding: 0;
+}
+body, html{
+	height: 100%;
+	width: 100%;
+}
+body {
+	max-width: 95%;
+	margin-left: 2.5%;
+	margin-right: auto;
+	display: inline-block;
+	background-color: #555;
+}
+img {
+	width: auto;
+	height: auto;
+	max-width: 300px;
+}
+/*nav stuff*/
+	/*desktop and tablet */
+#desktopNav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+#desktopNav li {
+	float: left;
+}
+#desktopNav a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+#desktopNav li a:hover {
+	background-color: #111;
+}
+.active {
+	background-color: #04AA6D;
+}
+	/*phone*/
+#hamNav {
+	width: 100%;
+	background-color: #333;
+}
+		/*link display*/
+#hamItems a {
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	border-top: 1px solid white;
+	text-decoration: none;
+	text-align: center;
+	padding: 14px 16px;
+	color: white;
+	clear: both;
+}
+#hamItems a:hover {
+	background-color: #04AA6D;
+}
+		/*hamburger styling*/
+#hamNav label {
+	display: inline-block;
+	color: white;
+	background: #04AA6D;
+	font-style: normal;
+	font-size: 1.2em;
+	padding: 10px;
+	float: right;
+}
+		/*making items appear*/
+#hamItems ,#hamburger {
+	display: none;
+}
+#hamNav input:checked ~ #hamItems {
+	display: block;
+}
+
+/*bottom stuff*/
+footer {
+	position: relative;
+	margin: 10px;
+	padding: 5px;
+	width: 95%;
+	bottom: 0;
+	left: 0;
+}
+#copyright {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+#cookieStatement {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	z-index: 9999;
+	opacity: 50%;
+	padding: 10px;
+	color: #FFF;
+	background-color: #FA0
+}
+
+/*form, since it's the same for all sizes*/
+form {
+	display: inline-box;
+	padding: 1em;
+	border: 1px solid #CCC;
+}
+form * {
+	box-sizing:	border-box;
+}
+form legend, 
+form label {
+	padding: 0;
+	font-weight: bold;
+	border: 5px;
+	margin: 2px;
+}
+form input[type="text"], 
+form input[type="email"],
+form textarea{
+	display: block;
+	width: 95%;
+	border: 1px solid #CCC;
+	padding: 0.3em;
+}
+form textarea {
+	height: 100px;
+}
+
+
+/*table, since it's the same for all*/
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	border-color: #111;
+	padding: 0.3em;
+}
+table {
+	display: inline-box;
+	border: 5px;
+	margin: 2px;
+}
+tbody tr:hover {
+	background-color: rgba(139, 231, 172, 0.44);
+}
+td {
+	color: white;
+}
+#sectionTickets {
+	position: relative;
+}
+
+/*bestdestinations, the part that is the same*/
+#article1 {
+	grid-area: article1;
+}
+#article2 {
+	grid-area: article2;
+}
+#article3 {
+	grid-area: article3;
+}
+#article4 {
+	grid-area: article4;
+}
+#article5 {
+	grid-area: article5;
+}
+#article6 {
+	grid-area: article6;
+}
+/*desktop*/
+@media screen and (min-width: 1280px){
+	#hamNav {
+		display: none;
+	}
+	/*index*/
+	/*bestdestinations*/
+	#mainDestinations {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-template-rows: auto auto auto auto auto auto auto;
+		gap: 1em 1em;
+		grid-template-areas:'article2 article1 article3'
+							'article2 article1 article3'
+							'article5 article1 article3'
+							'article5 article1 article4'
+							'article5 article1 article4'
+							'article5 article1 article4'
+							'article5 article6 article6';
+	}
+	/*tickets*/
+	table {
+		display: inline-block;
+		float: left;
+	}
+	#asideTickets {
+		display: flex;
+		flex-direction: column;
+		float: right;
+	}
+	/*contact*/
+	#mainContact {
+		display: grid;
+		grid-template-rows: auto auto auto;
+		grid-template-columns: auto 300px;
+	}
+	form {
+		grid-row: 1 / span 2;
+		grid-column: 1 / span 1;
+	}
+	#canaryForm {
+		grid-row: 1 / span 1;
+	}
+}
+
+/*tablet*/
+@media screen and (min-width: 481px) and (max-width: 1279px) {
+	#hamNav {
+		display: none;
+	}
+	/*index*/
+	/*bestdestinations*/
+	#mainDestinations {
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto auto auto auto auto auto auto;
+		gap: 1em 1em;
+		grid-template-areas:'article1 article2'
+							'article1 article2'
+							'article3 article2'
+							'article3 article5'
+							'article3 article5'
+							'article3 article5'
+							'article6 article6'
+							'article6 article6';
+	}
+	#article4 {
+		display: none;
+	}
+						
+	/*tickets*/
+	#canaryTickets {
+		display: none;
 	}
 	
-#cookieStatement {
-			height: .px;
-			text-align: center;
-			background-color: #FFF;
-			opacity: 50%;
-			z-index: 9999;
-			position: fixed;
-			right: 0px;
-			bottom: 0px;
-		}
-@media screen and (min-width: 1280px)
-	{
-		body {
-			background-color: red;
-		}
-		
-		#topNavigation ul {
-			text-align: center;
-			padding: 0;
-			margin: 0;
-		}
-		#topNavigation li {
-			display: inline;
-			padding: 5px;
-			border-right: 1px solid #bbb;
-		}
-		#topNavigation li:last-child {
-			border-right: none;
-		}
-		
-		#topNavigation a {
-			text-decoration: none;
-			color: #fff;
-		}
-		
-		footer {
-			background-color: gray;
-		}
-		
-		/*index*/
-		
-		/*bestestinations*/
-		.bestdestinationsMain {
-			display: grid;
-			height: 400px;
-			grid-template-columns: 470px 430px 380px;
-			grid-template-rows: auto auto auto auto auto auto auto;
-		}
-		#item1 {
-			grid-column: 2;
-			grid-row: 1 / span 6;
-			border-width: 0.2em;
-			border-color: #000000;
-			border-style: solid;
-		}
-		#item2 {
-			grid-column: 1;
-			grid-row: 1 / span 2;
-			border-width: 0.2em;
-			border-color: #000000;
-			border-style: solid;
-		}
-		#item3 {
-			grid-column: 3;
-			grid-row: 1 / span 3;
-			border-width: 0.2em;
-			border-color: #000000;
-			border-style: solid;
-		}
-		#item4 {
-			grid-column: 3;
-			grid-row: 4 / span 3;
-			border-width: 0.2em;
-			border-color: #000000;
-			border-style: solid;
-		}
-		#item5 {
-			grid-column: 1;
-			grid-row: 3 / span 5;
-			border-width: 0.2em;
-			border-color: #000000;
-			border-style: solid;
-		}
-		#item6 {
-			grid-column: 2 / 4;
-			grid-row: 7;
-			border-width: 0.2em;
-			border-color: #000000;
-			border-style: solid;
-		}
-		
-		/*tickets*/
-		
-		/*contact*/
+	/*contact*/
+	#mainContact {
+		display: grid;
+		grid-template-rows: auto auto auto;
+		grid-template-columns: auto 300px;
 	}
+	form {
+		grid-row: 1 / span 6;
+		grid-column: 1 / span 1;
+	}
+	#canaryForm {
+		grid-row: 1 / span 1;
+	}
+	#planeForm {
+		grid-row: 2 / span 2;
+	}
+}
 
-@media screen and (min-width: 481px) and (max-width: 1279px)
-	{
-		body {
-			background-color: green;
-		}
-		
+/*mobile*/
+@media screen and (max-width: 480px) {
+	#desktopNav {
+		display: none;
 	}
-
-@media screen and (max-width: 480px)
-	{
-		body {
-			background-color: blue;
-		}
-			
+	/*index*/
+	/*bestdestinations*/
+	#mainDestinations {
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-rows: auto auto auto auto;
+		gap: 1em 1em;
+		grid-template-areas:'article5'
+							'article3'
+							'article2'
+							'article1';
 	}
+	#article4 {
+		display: none;
+	}
+	#article6 {
+		display: none;
+	}
+	
+	/*tickets*/
+	#asideTickets {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	/*contact*/
+	
+}

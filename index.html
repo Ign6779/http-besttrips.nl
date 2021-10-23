@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 	<head>
@@ -15,86 +15,49 @@
 	</head>
 	
 	<body>
-		<header role="banner">
-			<h1>TUI</h1>
-			<h2>Discover your smile</h2>
+		<header>
+			<section id="title">
+				<h1>TUI</h1>
+				<h2>Discover your smile</h2>
+			</section>
 			
-			<!--Desktop and tablet navigation-->
-			<nav id="topNavigation">
+			<nav role='navigation' id="desktopNav">
 				<ul>
-					<li><a href="bestdestinations.html">Destinations</a></li>
-					<li><a href="tickets.html">Buy tickets</a></li>
+					<li><a class="active" href="index.html">Home</a></li>
+					<li><a href="bestdestinations.html">Best destinations</a></li>
+					<li><a href="tickets.html">Tickets</a></li>
 					<li><a href="contact.html">Contact us</a></li>
-				
-				</ul>		
-			</nav>	
+				</ul>
+			</nav>
+			
+			<!-- hiding it for now
+			<nav role='navigation' id="hamNav">
+				<section>
+					<label for="hamburger">&#9776;</label>
+					<input type="checkbox" id="hamburger"/>
+				</section>
+				<section id="hamItems">
+					<a class="active" href="index.html">Home</a>
+					<a href="bestdestinations.html">Best destinations</a>
+					<a href="tickets.html">Tickets</a>
+					<a href="contact.html">Contact us</a>
+				</ul>
+			</nav>
+			-->
 		</header>
 		
-		<main id="indexMain">
-			<section id="largeVideo">	
-				<video autoplay="autoplay">
-					<source src="./vid/madrid_laptop.mp4" type="video/mp4" />
-					<source src="./vid/madrid_laptop2.ogg" type="video/ogg" />
-					Your browser does not support video
-				</video>
-			</section>
+		<main>
 		
-			<!--
-			<section id="smallVideo">
-				<video>
-					<source src="./vid/madrid_phone.mp4" type="video/mp4">
-				</video>
-			</section>
-			-->
-			<section id="articles">
-				<article id="story 1">
-					<h2>Item1</h2>
-					<p>Paris is truly one of the most magical and loved places in the world. Wether it be walking down the Champs Elysées, taking a look at the Notre dame, 
-					admiring art at the Museé d'Orsay or the Louvre, or visiting the world-famous Eiffel tower, Paris is sure to fulfill your traveling needs no matter you do. 
-					Plus, book now in order to save up to 10% in your plane ticket!</p>
-					<a href="https://www.tui.nl/paris-louis-blanc-50970938/"><img src="./img/paris_image.jpg" title="paris image" alt="Image of Paris" id="paris_image"/></a>
-				</article>
-				
-				<article id="story 2">
-					<h2>Item2</h2>
-					<p>Madrid is a city like no other. It may look like a urban and beautiful city at first, but once you start walking down its many alleyways, 
-					visiting the different neighborhoods and observing all the small details present in every wall, garden and architecture, will you realize that one must visit 
-					Madrid many, many times in order to fully see and appreciate it all. That isn't even mentioning the incredible transformation it experiences during the night, 
-					it feels like a new place. If you're looking for an intricate city with plenty of night life, Madrid is for you.</p>
-					<a href="https://www.tui.nl/reizen/spanje/centraal-spanje/madrid/"><img src="./img/madrid_image.jpg" title="madrid image" 
-					alt="Image of Madrid" id="madrid_image"/></a>
-				</article>
-				
-				<article id="story 3">
-					<h2>Barcelona</h2>
-					<p>There are almost an unlimited amount of things to do; you will never get tired. You can visit the world-known church of the Sagrada Familia, 
-					visit Dali's Park Güel or La Pedrera or Casa Batlló, taking a stroll down Las Ramblas...or just enjoying the beautiful city, with its unique architecture, 
-					marvellous food and wonderful people. There are so many things to see, so much time to spend, 
-					so much food to eat, it truly is a city with unlimited opportunity.</p>
-					<a href="https://www.tui.nl/reizen/spanje/catalonie/costa-barcelona/costa-brava/barcelona/"><img src="./img/barcelona_image.jpg" title="barcelona image" 
-					alt="Image of Barcelona" id="barcelona_image"/></a>
-				</article>
-			</section>
-		
-			<aside id="otherInfo">
-				<h2>Places sure to become famous in the future</h2>
-				<ol>
-					<li>aside 1</li>
-					<li>aside 2</li>
-					<li>aside 3</li>
-					<li>aside 4</li>
-					<li>aside 5</li>
-				</ol>
-			</aside>
 		</main>
 		
 		<footer>
-			<section id="watermark">
-				<p>&copy; 2021 Ignacio de Eusebio</p>
+			<section id="copyright">
+				&copy; 2021 Ignacio de Eusebio
+			</section>
+			
+			<section id="cookieStatement">
+				<h2>Cookie Statement</h2>
 			</section>
 		</footer>
-		
-		<p id="cookieStatement">Cookie statement</p>
 	</body>
-
 </html>

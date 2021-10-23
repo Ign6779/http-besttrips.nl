@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>	
 <html lang="en">
 
 	<head>
@@ -15,59 +15,59 @@
 	</head>
 	
 	<body>
-		<header role="banner">
-			<h1>TUI</h1>
-			<h2>Discover your smile</h2>
+		<header>
+			<section id="title">
+				<h1>TUI</h1>
+				<h2>Discover your smile</h2>
+			</section>
 			
-			<!--Desktop and tablet navigation-->
-			<nav id="topNavigation">
+			<nav role='navigation' id="desktopNav">
 				<ul>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="bestdestinations.html">Destinations</a></li>
-					<li><a href="tickets.html">Tickets</a></li>				
-				</ul>			
-			</nav>			
+					<li><a href="bestdestinations.html">Best destinations</a></li>
+					<li><a href="tickets.html">Tickets</a></li>
+					<li><a class="active" href="contact.html">Contact us</a></li>
+				</ul>
+			</nav>
 		</header>
 		
-		<form action="question" method="post" id="questionnaire">
-			<fieldset>
-				<legend>Do you have a question? Ask it here!</legend>
-				
-				<p>
-					<label for="name">Name:</label>
-					<input type="text" name="name" id="nameInput">
-				</p>
-				
-				<p>
-					<label for="email">Email:</label>
-					<input type="email" name="email" id="emailInput">
-				</p>
-				
-				<p>
-					<label for="message">Question:</label>
-					<input type="text" name="message" id="questionInput">
-				</p>
-				
-				<p>
-				<button>Submit</button>
-				<button type="reset">Reset form</button>
-				</p>				
-			</fieldset>
-		</form>
-		
-		<aside id="ad">
-			<a href="http://tui.nl">
-				<img src="./img/plane_image.jpg" title="plane image" alt="Image of a plane" />
-				<img src="./img/greece_image.jpg" title="greece image" alt="Image of Greece" />
-				<img src="./img/canary_image.jpg" title="canary image" alt="Image of the Canary Islands" />
-			</a>
-		</aside>
+		<main id="mainContact">
+			<form>
+				<fieldset>
+					<legend>Contact us</legend>
+					
+					<p>
+						<label for="name">Full name</label>
+						<input type="text" id="name" name="name" placeholder="Name Surname"/>
+					</p>
+					
+					<p>
+						<label for="email">Email</label>
+						<input type="email" id="email" name="email" placeholder="email@gmail.com"/>
+					</p>
+					
+					<p>
+						<label for="message">Your question here</label>
+						<textarea id="message" name="message" maxlength="500" placeholder="..."/></textarea>
+					</p>
+				</fieldset>
+			</form>
+			
+			<aside id="asideForm">
+				<a href="https://www.tui.nl/"><img src="./img/canary_image.jpg" title="canary image" alt="image of Canary Islands" id="canaryForm"/></a>
+				<a href="https://www.tui.nl/"><img src="./img/greece_image.jpg" title="greece image" alt="image of Greece" id="greeceForm"/></a>
+				<a href="https://www.tui.nl/"><img src="./img/plane_image.jpg" title="plane image" alt="image of a plane" id="planeForm"/></a>
+			</aside>
+		</main>
 		
 		<footer>
-			<p>&copy; 2021 Ignacio de Eusebio</p>
+			<section id="copyright">
+				&copy; 2021 Ignacio de Eusebio
+			</section>
+			
+			<section id="cookieStatement">
+				<h2>Cookie Statement</h2>
+			</section>
 		</footer>
-		
-		<p id="cookieStatement">Cookie statement</p>
 	</body>
-	
 </html>
