@@ -397,6 +397,9 @@ td {
 		border: none;
 		margin: 0;
 	}
+		#mainVideo {
+		display: none;
+	}
 	/*bestdestinations*/
 	#mainDestinations {
 		display: grid;
