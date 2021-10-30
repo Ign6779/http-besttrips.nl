@@ -7,6 +7,7 @@
 			type="text/css"
 			href="css/styles.css"
 		/>
+		<link rel="icon" href="./img/logo_image.png" sizes="16x16" type="image/png"/>
 		<meta charset="utf-8" />
 		<meta name="description" content="Best trip destinations from NL" />
 		<meta name="keywords" content="Trip, Netherlands, NL, destination, travel" />
@@ -18,10 +19,11 @@
 		<header>
 			<section id="title">
 				<h1>TUI</h1>
-				<h2>Discover your smile</h2>
+				<img src="./img/logo_image.png" title="logo" alt="logo" id="logo"/>
 			</section>
+			<h2>Discover your smile</h2>			
 			
-			<nav role='navigation' id="desktopNav">
+			<nav role="navigation" id="desktopNav">
 				<ul>
 					<li><a class="active" href="index.html">Home</a></li>
 					<li><a href="bestdestinations.html">Best destinations</a></li>
@@ -30,24 +32,75 @@
 				</ul>
 			</nav>
 			
-			<!-- hiding it for now
-			<nav role='navigation' id="hamNav">
-				<section>
-					<label for="hamburger">&#9776;</label>
-					<input type="checkbox" id="hamburger"/>
-				</section>
+			<nav role="navigation" id="hamNav">
+				<label for="hamburger">&#9776;</label>
+				<input type="checkbox" id="hamburger" name="hamburger"/>
+				
 				<section id="hamItems">
 					<a class="active" href="index.html">Home</a>
 					<a href="bestdestinations.html">Best destinations</a>
 					<a href="tickets.html">Tickets</a>
 					<a href="contact.html">Contact us</a>
-				</ul>
+				</section>
 			</nav>
-			-->
+					
 		</header>
 		
 		<main>
-		
+			<section id="mainVideo">
+				<video autoplay playsinline>
+					<source src="./vid/madrid_laptop.mp4" type="video/mp4">
+					<source src="./vid/madrid_laptop2.ogg" type="video/ogg">
+					<em>Your browser does not support video</em>
+				</video>
+			</section>
+			<section id="mainIndex">
+				<section id="flexContainer">
+					<article>
+						<section class="indexArticles">
+							<h2>Paris</h2>
+							<p>Paris is truly one of the most magical and loved places in the world. Wether it be walking down the Champs Elysées, taking a look at the Notre dame, 
+							admiring art at the Museé d'Orsay or the Louvre, or visiting the world-famous Eiffel tower, Paris is sure to fulfill your traveling needs no matter you do. 
+							Plus, book now in order to save up to 10% in your plane ticket!</p>
+						</section>
+						
+						<a href="https://www.tui.nl/paris-louis-blanc-50970938/"><img src="./img/paris_image.jpg" title="Image of Paris" alt="An image of Paris" id="paris_image" class="indexImage"/></a>
+					</article>
+					
+					<article>
+						<section class="indexArticles">
+							<h2>Madrid</h2>
+							<p>Madrid is a city like no other. It may look like a urban and beautiful city at first, but once you start walking down its many alleyways, visiting the 
+							different neighborhoods and observing all the small details present in every wall, garden and architecture, will you realize that one must visit Madrid many, 
+							many times in order to fully see and appreciate it all. That isn't even mentioning the incredible transformation it experiences during the night, it feels 
+							like a new place. If you're looking for an intricate city with plenty of night life, Madrid is for you.</p>
+						</section>
+						
+						<a href="https://www.tui.nl/reizen/spanje/centraal-spanje/madrid/"><img src="./img/madrid_image.jpg" title="Image of Madrid" alt="An image of Madrid" id="madrid_image" class="indexImage"/></a>
+					</article>
+					
+					<article>
+						<section class="indexArticles">
+							<h2>Barcelona</h2>
+							<p>There are almost an unlimited amount of things to do; you will never get tired. You can visit the world-known church of the Sagrada Familia, visit Dali's
+							Park Güel or La Pedrera or Casa Batlló, taking a stroll down Las Ramblas...or just enjoying the beautiful city, with its unique architecture, marvellous food
+							and wonderful people. There are so many things to see, so much time to spend, so much food to eat, it truly is a city with unlimited opportunity.<a href="https://www.tui.nl/">more info</a></p>
+						</section>
+						
+						<a href="https://www.tui.nl/reizen/spanje/catalonie/costa-barcelona/costa-brava/barcelona/"><img src="./img/barcelona_image.jpg" title="Image of Barcelona" alt="An image of Barcelona" id="barcelona_image" class="indexImage"/></a>
+					</article>
+				</section>
+				
+				<aside id="asideIndex">
+					<h3>Places sure to be good</h3>
+					<ol>
+						<li>Prague</li>
+						<li>Oklahoma</li>
+						<li>Cape Green</li>
+						<li>Castilla la Mancha</li>
+						<li>Ciguatanejo</li>
+					</ol>
+			</section>
 		</main>
 		
 		<footer>
@@ -59,5 +112,12 @@
 				<h2>Cookie Statement</h2>
 			</section>
 		</footer>
+		<section id="useless">
+			<p>first paragraph</p>
+			<p>second paragraph</p>
+			<article>
+				<p>first para in an article</p>
+			</article>
+		</section>
 	</body>
 </html>
